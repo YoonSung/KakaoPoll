@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flipper"
+    android:layout_width="fill_parent"
+    android:layout_height="32.83dp"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bottom_bg"
+    android:inAnimation="@anim/push_up_in"
+    android:outAnimation="@anim/push_up_out" >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="321.6dp"
+        android:layout_height="32.83dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bottom_friend" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="321.6dp"
+        android:layout_height="32.83dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bottom_kakaopoll" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="321.6dp"
+        android:layout_height="32.83dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bottom_market" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="321.6dp"
+        android:layout_height="32.83dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bottom_money" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="321.6dp"
+        android:layout_height="32.83dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bottom_dooit" />
+</ViewFlipper>

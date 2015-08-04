@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/recommend_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="93"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="23.45dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="23.45dp"
+            android:background="@drawable/recommend_middle"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal" >
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/recommend_center_text"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:stretchColumns="0,1,2,3" >
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_span="4"
+                        android:gravity="center"
+                        android:text="SNS 친구추천 바로가기"
+                        android:textColor="#ff000000"
+                        android:textScaleX="0.8"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="monospace" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="7dp" >
+                    <ImageButton
+                        android:id="@+id/btnKakao"
+                        android:layout_width="64.32dp"
+                        android:layout_height="64.99dp"
+                        android:layout_column="0"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/kakao" />
+                    <ImageButton
+                        android:id="@+id/btnTwitter"
+                        android:layout_width="64.32dp"
+                        android:layout_height="64.99dp"
+                        android:layout_column="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/tweetter" />
+                    <ImageButton
+                        android:id="@+id/btnFacebook"
+                        android:layout_width="64.32dp"
+                        android:layout_height="64.99dp"
+                        android:layout_column="2"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/facebook" />
+                    <ImageButton
+                        android:id="@+id/btnMetoday"
+                        android:layout_width="64.32dp"
+                        android:layout_height="64.99dp"
+                        android:layout_column="3"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/metoday" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="7"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+    <com.DooitResearch.kakaoPoll.Bottom_Flipper
+        android:id="@+id/bottomflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="32.83dp"
+        android:layout_gravity="bottom" >
+    </com.DooitResearch.kakaoPoll.Bottom_Flipper>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.DooitResearch.kakaoPoll"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true" />
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:icon="@drawable/icon"
+        android:label="카카오폴" >
+        <activity
+            android:name=".Splash"
+            android:label="카카오폴"
+            android:screenOrientation="portrait"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="Login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="Main"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="Webview"      
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Translucent"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name="Recommend"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="Intro_Dooit"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

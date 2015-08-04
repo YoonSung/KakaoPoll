@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/choice_bg"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="22"
+            android:gravity="left"
+            android:orientation="horizontal" >
+            <ImageButton
+                android:id="@+id/btn1"
+                android:layout_width="260.63dp"
+                android:layout_height="103.85dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/choice_poll_regist_selector" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="3"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="22"
+            android:gravity="right"
+            android:orientation="horizontal" >
+            <ImageButton
+                android:id="@+id/btn2"
+                android:layout_width="263.31dp"
+                android:layout_height="103.85dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/choice_poll_result_selector" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="3"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="23"
+            android:gravity="left" >
+            <ImageButton
+                android:id="@+id/btn3"
+                android:layout_width="260.63dp"
+                android:layout_height="103.85dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/choice_poll_recommend_selector" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="13"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <ImageButton
+                android:id="@+id/aboutdoit"
+                android:layout_width="54.94dp"
+                android:layout_height="56.28dp"
+                android:src="@drawable/choice_aboutdooit_selector" />
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="170dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/manual"
+                android:layout_width="54.94dp"
+                android:layout_height="56.28dp"
+                android:src="@drawable/choice_manual_selector" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="7"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+    <com.DooitResearch.kakaoPoll.Bottom_Flipper
+        android:id="@+id/bottomflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="32.83dp"
+        android:layout_gravity="bottom" >
+    </com.DooitResearch.kakaoPoll.Bottom_Flipper>
+</FrameLayout>
